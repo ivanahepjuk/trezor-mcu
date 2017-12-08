@@ -114,9 +114,9 @@ void bootloader_loop(void)
 		oledDrawString(52, 30, serial);      // first part of serial
 		oledDrawStringRight(OLED_WIDTH - 1, OLED_HEIGHT - 8, "Loader " VERSTR(VERSION_MAJOR) "." VERSTR(VERSION_MINOR) "." VERSTR(VERSION_PATCH));
 	} else {
-		oledDrawString(52, 10, "Welcome!");
-		oledDrawString(52, 30, "Please visit");
-		oledDrawString(52, 50, "trezor.io/start");
+		oledDrawString(52, 10, "olololo");
+		oledDrawString(52, 30, "tralala");
+		oledDrawString(52, 50, "muhehe");
 	}
 	oledRefresh();
 
@@ -130,7 +130,7 @@ int main(void)
 #endif
 	__stack_chk_guard = random32(); // this supports compiler provided unpredictable stack protection checks
 #ifndef APPVER
-	memory_protect();
+	//memory_protect();
 	oledInit();
 #endif
 
